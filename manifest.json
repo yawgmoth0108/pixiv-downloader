@@ -1,0 +1,14 @@
+{
+    "name": "pixiv downloader",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "description": "pixiv downloader",
+    "browser_action": {
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.pixiv.net/stacc?mode=unify"],
+            "js": ["jquery.min.js", "main.js"]
+        }
+    ]
+}
